@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+}
+
+body{
+    background-color: rgb(244, 240, 240);
+
+
+  
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 4px;           /* thickness of the line */
+  width: 0%;             /* start from 0% */
+  background-color: black; /* color of the line */
+  z-index: 9999;
+  animation: loadLine 1.5s ease forwards;
+}
+
+/* Keyframes for animation */
+@keyframes loadLine {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+/* Optional: hide loader after animation */
+body.loaded .loader {
+  display: none;
+}
+
+
+.navbar{
+    flex:1;
+    display:flex;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 5%;
+    justify-content: space-between;
+}
+.logo img {
+  width: 300px; 
+  margin-top: 25px;
+  height: auto;
+  display: block;
+  background-color: transparent;
+}
+
+.searchbar{
+    background-color: rgba(255, 166, 0, 0.822);
+    flex: 1;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 50px 20px;;
+}
+.searchbar>input[type="search"]{
+    border:0;
+    outline: 0;
+    font-size: 22px;
+    font-family: sans-serif;
+    background-color: transparentS;
+}
+
+/* navbar links */
+
+.links{
+    flex:1;
+    display: flex;
+    gap: 20px;
+    width: 35px;
+    align-items: end;
+}
+.links>a{
+    padding:50px 10px;
+    display: flex;
+    align-items:center;
+    text-decoration: none;
+    gap: 15px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: black;
+}
+.active:hover{
+    color: white;
+    background-color: rgb(118, 118, 216);
+    border-radius: 10px;
+}
+
+.categories{
+    background-color: rgba(255, 166, 0, 0.822);
+    margin: 10px 20px;
+    padding: 10px 10%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.cat-card{
+    flex: 1;
+    height: auto;
+    text-align: center;
+}
+.cat-card>h4{
+    font-family: sans-serif;
+    font-size: 18px;
+    text-wrap: nowrap;
+    font-weight: 600;
+    color: rgb(31, 31, 31);
+}
+
+
+.banner{
+    flex: 1;
+}
+.banner>img{
+    width: 100%;
+    aspect-ratio: 9/2;
+    height: 500px;
+    object-fit: contain;
+    border-radius: 5px;
+    background-size: cover;
+}
+
+.sales{
+    font-size: 32px;
+    font-family: sans-serif;
+    padding: 80px 70px;
+}
+.widget{
+    padding:50px 500px;
+}
+.zero-EMI{
+    flex: 1;
+}
+.zero-EMI>img{
+    width: 100%;
+    aspect-ratio: 9/2;
+    height: 400px;
+    object-fit: contain;
+    border-radius: 5px;
+    background-size: cover;
+    justify-content: center;
+    padding: 50px 25px;
+}
+.EMI{
+    flex: 1;
+    background-color: rgba(255, 166, 0, 0.822);
+}
+.EMI>img{
+    width: 15%;
+    height: auto;
+    border-radius: 15px;
+    padding: 105px;
+}
+
+.launched{
+    font-size: 42px;
+    font-family: sans-serif;
+    padding: 80px 70px;
+}
+
+.redmi15a{
+    flex: 1;
+}
+.redmi15a>img{
+    width: 100%;
+    aspect-ratio: 9/2;
+    height: 900px;
+    object-fit: contain;
+    border-radius: 5px;
+    background-size: cover;
+    justify-content: center;
+    padding: 15px;
+}
+
+.upcoming{
+    font-size: 32px;
+    font-family: sans-serif;
+    padding: 80px 70px;
+}
+.upnext{
+    flex: 1;
+}
+.upnext>img{
+    width: 35%;
+    height: auto;
+    border-radius: 15px;
+    padding: 55px;
+}
+.next{
+    font-size: 32px;
+    font-family: sans-serif;
+    padding: 80px 70px;
+}
+
+.smart-savings{
+    background-color: rgba(255, 166, 0, 0.822);
+}
+.smart-savings>img{
+    width: 15%;
+    height: auto;
+    border-radius: 15px;
+    padding: 55px;
+}
+
+.classic>img{
+    width: 35%;
+    height: auto;
+    border-radius: 15px;
+    padding: 55px;width: 100%;
+    aspect-ratio: 9/2;
+    height: 500px;
+    object-fit: contain;
+    border-radius: 5px;
+    background-size: cover;
+    justify-content: center;
+    padding: 15px; 
+}
+ .amazon>img{
+    width: 35%;
+    height: auto;
+    border-radius: 15px;
+    padding: 55px;width: 100%;
+    aspect-ratio: 9/2;
+    height: 500px;
+    object-fit: contain;
+    border-radius: 5px;
+    background-size: cover;
+    justify-content: center;
+    padding: 15px; 
+   
+}
+
+
+.snap>img{
+     width: 35%;
+    height: auto;
+    border-radius: 15px;
+    padding: 55px;width: 100%;
+    aspect-ratio: 9/2;
+    height: 500px;
+    object-fit: contain;
+    border-radius: 5px;
+    background-size: cover;
+    justify-content: center;
+    padding: 15px; 
+}
+
+
+@media (max-width: 768px) {
+    .footer, .categories, .banner{
+        flex-direction: column;
+        width:100%;
+    }
+}
+
+
+
+
+
+
+.bottom{
+    color: white;
+    background-color: black;
+    padding: 60px 80px;
+    font-family: sans-serif;
+}
+.bottom>h3{
+    padding: 9px;
+    color: rgba(255, 255, 255, 0.366);
+    font-weight: 300;
+    font-size: 25px;
+}
+.bottom>ul{
+    padding: 10px 2%;
+    font-size: 20px;
+}
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: black;
+    padding: 30px;
+    gap: 65px;
+}
+.social-icon img{
+   width: 30px;
+   height: 30px;
+   object-fit: contain;
+   display: inline-block;
+   vertical-align: middle;
+   margin-right: 10px;
+   padding: 15px 10px;
+}
+.footer::after {
+  content: "\00A9 2026 Srivastav Phones. All rights reserved.";
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 22px;
+  color: white;
+  padding: 1px 900px;
+  margin-top: 0;
+}
